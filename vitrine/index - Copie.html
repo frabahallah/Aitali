@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CDI Import/Export</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="entete" title="Logo, titre et barre de recherche">
+			<div id="logo">
+				<canvas id="myLogo" height="80px" width="80px">
+					<img src="pics/logo.png" alt="Logo CDI Import/Export" /></canvas>
+				<span id="slogan">Toujours à vos côtés</span>
+				<!-- <span id="slogan">Toujours &agrave; vos c&ocirc;t&eacute;s</span> -->
+			</div>
+			<div id="title">
+				<span>CDI Import/Export</span>
+			</div>
+			<div id="search">
+				<form method="get" action="search.php">
+					<input type="text" name="q" placeholder="Recherche" /> <input
+						type="submit" value="Go" />
+				</form>
+			</div>
+			<div id="login">
+				<a href="php/login.php"><img src="pics/connexion.png"
+					alt="Connexion au site marchand" /></a>
+			</div>
+		</header>
+		<section id="slideshow">
+			<div id="gauche">&lt;</div>
+			<div id="slide">
+				<img src="pics/slide1.jpg" alt="Slides" />
+			</div>
+			<div id="droite">&gt;</div>
+		</section>
+		<div id="middle">
+			<nav id="menu" class="flottant">
+				<ul>
+					<li><a href="video.html" target="visu" class="bouton">Accueil</a></li>
+					<li><a href="present.html" target="visu" class="bouton">Présentation</a></li>
+					<li><a href="services.html" target="visu" class="bouton">Services</a></li>
+					<li><a href="portail.html" target="visu" class="bouton">Portail</a></li>
+					<li><a href="contact.html" target="_blank" class="bouton">Contact</a></li>
+					<li><a href="affect.html" target="_blank" class="bouton">Affectation</a></li>
+				</ul>
+			</nav>
+			<section id="contenu" class="flottant">
+				<iframe name="visu" id="visu" src="video.html"></iframe>
+			</section>
+			<aside id="actus" class="flottant">actualités</aside>
+		</div>
+		<footer id="ppage">
+			<div id="social">
+				<a href="https://www.facebook.com" target="_blank"><img
+					alt="Logo Facebook" src="pics/logo_f.png"></a> <span>|</span> <a
+					href="https://twitter.com" target="_blank"><img
+					alt="Logo Twitter" src="pics/logo_t.png"></a> <span>|</span> <a
+					href="https://plus.google.com" target="_blank"><img
+					alt="Logo Google+" src="pics/logo_g.png"></a>
+			</div>
+			<hr />
+			<div id="plan">
+				<div>
+					<a href="credits.html" target="_blank">Crédits</a>
+				</div>
+				<div>
+					<a href="data/greta.xml" target="_blank">Plan du site</a> <a
+						href="recrut.html" target="_blank">Recrutement</a>
+				</div>
+				<div>
+					<a href="legal.html" target="_blank">Mentions légales</a>
+				</div>
+				<div>
+					<div>
+						<a href="index.html" target="_blank"><img alt="FRA"
+							src="pics/fra.png" /></a> <a href="index_eng.html" target="_blank"><img
+							alt="ENG" src="pics/eng.png" /></a> <a href="index_arb.html"
+							target="_blank"><img alt="ARB" src="pics/arb.png" /></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/biblio.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
