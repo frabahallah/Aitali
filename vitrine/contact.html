@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>CDI Import/Export</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<h1>Nous contacter</h1>
+	<aside id="formu">
+		<form method="post" action="contact.php" id="frmRecrut">
+			<label for="nom">Nom : </label><input type="text" id="nom" name="nom"
+				required /><span class="redstar">*</span><br> <label
+				for="mail">Mail : </label><input type="email" id="mail" name="mail"
+				required /><span class="redstar">*</span><br> <label for="msg">Message
+				: </label>
+			<textarea id="msg" name="msg" rows="5" cols="20" required></textarea>
+			<span class="redstar">*</span><br> <img src="captcha.php"
+				alt="Captcha" /><br> <label for="captcha">Que
+				voyez-vous ? </label><input type="text" id="captcha" name="captcha" /><br>
+			<input type="button" value="Envoyer" id="envoi" /> <input
+				type="button" value="Cookie" id="save1" />
+		</form>
+	</aside>
+	<aside id="carte">
+		<div id="myMap"></div>
+		<div id="address">
+			<strong>CDI Import/Export</strong><br> <span>58 avenue
+				Faidherbe</span><br> <span>93100 Montreuil</span><br> <strong>Téléphone
+				: </strong><span>+33 1 48 58 79 97</span><br> <strong>Horaires
+				: </strong><span>8h30-12h30 / 13h30-16h30</span><br> <strong>Mail
+				: </strong><a href="mailto:cdi@impexp.com">cdi@impexp.com</a><br> <strong>SIRET
+				: </strong><span>123 456 789 000</span>
+		</div>
+	</aside>
+	<script src="js/biblio.js"></script>
+	<script src="js/contact.js"></script>
+	<script src="js/objet.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+</body>
+</html>

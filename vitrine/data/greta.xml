@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="greta_transfo.xsl"?>
+<stage>
+	<session>
+		<intitule>CDI</intitule>
+		<debut>2016-02-15</debut>
+		<fin>2016-09-21</fin>
+		<exam>2016-09-24</exam>
+		<lieu>
+			<lycee>Eugénie Cotton</lycee>
+			<adresse>58 avenue Faidherbe</adresse>
+			<cp>93100</cp>
+			<ville>Montreuil</ville>
+		</lieu>
+		<salle no="106">
+			<nb_pc>16</nb_pc>
+			<proj>true</proj>
+			<printer>true</printer>
+			<scan>true</scan>
+			<cafetiere>false</cafetiere>
+		</salle>
+	</session>
+	<participants>
+		<contact genre="M">
+			<prenom>Elie</prenom>
+			<poste>1</poste>
+			<date_entree>2016-02-15</date_entree>
+		</contact>
+		<contact genre="M">
+			<prenom>Mehdi</prenom>
+			<poste>2</poste>
+			<date_entree>2016-02-29</date_entree>
+		</contact>
+		<contact genre="M">
+			<prenom>Eliot</prenom>
+			<poste>3</poste>
+			<date_entree>2016-02-15</date_entree>
+		</contact>
+		<contact genre="M">
+			<prenom>Mohamed D</prenom>
+			<poste>4</poste>
+			<date_entree>2016-02-29</date_entree>
+		</contact>
+		<contact genre="M">
+			<prenom>Mohamed AA</prenom>
+			<poste>5</poste>
+			<date_entree>2016-02-15</date_entree>
+		</contact>
+		<contact genre="M">
+			<prenom>Michel</prenom>
+			<poste>6</poste>
+			<date_entree>2016-02-15</date_entree>
+		</contact>
+		<contact genre="M">
+			<prenom>Mannique</prenom>
+			<poste>11</poste>
+			<date_entree>2016-02-15</date_entree>
+		</contact>
+		<contact genre="M">
+			<prenom>Mamadou</prenom>
+			<poste>9</poste>
+			<date_entree>2016-02-15</date_entree>
+		</contact>
+		<contact genre="M">
+			<prenom>Steve</prenom>
+			<poste>8</poste>
+			<date_entree>2016-02-15</date_entree>
+		</contact>
+		<contact genre="M">
+			<prenom>Hassan</prenom>
+			<poste>15</poste>
+			<date_entree>2016-02-15</date_entree>
+		</contact>
+		<contact genre="M">
+			<prenom>Patrick</prenom>
+			<poste>14</poste>
+			<date_entree>2016-02-15</date_entree>
+		</contact>
+		<contact genre="M">
+			<prenom>Irinna</prenom>
+			<poste>13</poste>
+			<date_entree>2016-02-15</date_entree>
+		</contact>
+	</participants>
+	<intervenants>
+		<contact genre="F">
+			<prenom>Monika</prenom>
+			<matieres>
+				<matiere>Anglais</matiere>
+			</matieres>
+			<jours>
+				<jour duree="7">Jeudi</jour>
+			</jours>
+		</contact>
+		<contact genre="F">
+			<prenom>Mérique</prenom>
+			<matieres>
+				<matiere>Communication</matiere>
+			</matieres>
+			<jours>
+				<jour duree="7">Lundi</jour>
+			</jours>
+		</contact>
+		<contact genre="M">
+			<prenom>Michel</prenom>
+			<matieres>
+				<matiere>Java</matiere>
+				<matiere>Android</matiere>
+			</matieres>
+			<jours>
+				<jour duree="7">Mardi</jour>
+			</jours>
+		</contact>
+		<contact genre="M">
+			<prenom>Denis</prenom>
+			<matieres>
+				<matiere>Gestion de projets</matiere>
+			</matieres>
+			<jours>
+				<jour duree="8">Mardi</jour>
+				<jour duree="8">Mercredi</jour>
+				<jour duree="8">Jeudi</jour>
+			</jours>
+		</contact>
+		<contact genre="M">
+			<prenom>Lesly</prenom>
+			<matieres>
+				<matiere>Développement Web 2.0</matiere>
+				<matiere>BDD et Langage SQL</matiere>
+			</matieres>
+			<jours>
+				<jour duree="7">Lundi</jour>
+				<jour duree="7">Mardi</jour>
+				<jour duree="7">Mercredi</jour>
+				<jour duree="7">Jeudi</jour>
+				<jour duree="7">Vendredi</jour>
+			</jours>
+		</contact>
+		<contact genre="M">
+			<prenom>Patrice</prenom>
+		</contact>
+	</intervenants>
+	<admins>
+		<contact genre="F">
+			<prenom>Judith</prenom>
+			<tel>01 41 42 43 44</tel>
+		</contact>
+		<contact genre="F">
+			<prenom>Nathalie</prenom>
+			<mail>nathalie.bois@forpro-creteil.org</mail>
+		</contact>
+		<contact genre="M">
+			<prenom>Radouane</prenom>
+			<fax>+33 179787776</fax>
+			<tel>+33 611223344</tel>
+		</contact>
+	</admins>
+</stage>

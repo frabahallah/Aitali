@@ -1,0 +1,391 @@
+@font-face {
+	font-family: lesly;
+	src: url("../fonts/KOMIKAX_.ttf");
+}
+
+/* Animation du titre */
+@keyframes macumba {
+	from {
+		text-shadow: 0px 0px 10px #ffffff; 
+	}
+	33% {
+		text-shadow: 0px 0px 10px #ffff00; 
+	}
+	66% {
+		text-shadow: 0px 0px 10px #ffaa22; 
+	}
+	to {
+		text-shadow: 0px 0px 10px #ff0000; 
+	}
+}
+
+/* Un petit coup de Sprite ! */
+.sprite {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-image: url("../pics/sprite.png");
+}
+
+.sprite.f {
+	background-position: -67px -99px; 
+}
+
+.sprite.m {
+	background-position: -189px -99px; 
+}
+
+/* Mise en forme du document XML */
+table.waow{
+	width: 90%;
+}
+
+table.waow>thead>tr>th{
+	background-color: navy;
+	color: gold;
+}
+
+table.waow>tbody>tr:nth-child(odd){
+	background-color: linen;
+}
+
+table.waow>tbody>tr:nth-child(even){
+	background-color: lavender;
+}
+
+/* Mise en forme de la page PRESENT */
+img[src*=award]{
+	width: 150px;
+	height: 150px;
+}
+
+/* Mise en forme de la page AFFECT */
+div#buttons{
+	clear: both;
+}
+
+div#dnd>*{
+	float:left;
+	border: solid 5px gray;
+	width: 300px;
+	height: 300px;
+	padding: 5px;
+	margin: 5px;
+	overflow: auto;
+}
+
+div#dnd>*:nth-child(odd){
+	background-color: lavender;
+}
+
+div#dnd>*:nth-child(even){
+	background-color: linen;
+}
+
+div#dnd>div[id^=box]>img[id^=per]{
+	width: 64px;
+	height: 64px;
+}
+
+/* Mise en forme de la page CONTACT */
+#formu, #carte {
+	background-color: transparent;
+	width: 50%;
+	float: right;
+}
+
+#carte {
+	text-align: center;
+}
+
+#myMap{
+	height: 300px;
+	width: 93%;
+	margin: 10px auto;
+	background-color: #cccccc;
+}
+
+/* Mise en forme des FORMULAIRES */
+.redstar {
+	color: #ff0000;
+	margin-left: 5px; 
+}
+
+form#frmRecrut img {
+	height: 50%;
+	width: 50%;
+}
+
+form#frmRecrut label {
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+	font-weight: bold;
+}
+
+form#frmRecrut input+label{
+	display: inline;
+	font-weight: normal;
+} 
+
+form#frmRecrut input {
+	display: inline-block;
+	left: 220px;
+}
+
+form#frmRecrut input[type=submit],
+form#frmRecrut input[type=reset] {
+	background-color: rgb(44,93,152);
+	color: #ffffff;
+}
+
+/* Mise en forme du FOOTER */
+footer#ppage {
+	height: 100px;
+}
+
+footer#ppage>div#social {
+	text-align: center;
+}
+
+footer#ppage>div#social>* {
+	display: inline-block;
+	line-height: 30px;
+}
+
+footer#ppage>div#plan>div {
+	width: 33.3%;
+	float: left;
+	text-align: center;
+}
+
+footer#ppage>div#plan>div>a{
+	display: block;
+}
+
+/* Mise en forme du IFRAME */
+iframe#visu {
+	width: 100%;
+	height: 400px;
+	border-radius: 20px;
+}
+
+aside#actus {
+	height: 400px;
+}
+
+/* Mise en forme générale */
+body {
+	background-image: radial-gradient(rgb(219, 228, 244), rgb(154, 181, 228));
+	background-color: rgb(154, 181, 228);
+	font-family: verdana, arial, sans-serif;
+}
+
+/* Mise en forme du SLIDESHOW */
+section#slideshow>div {
+	float: left;
+}
+
+div#middle {
+	clear: left;
+}
+
+section#slideshow {
+	height: 150px;
+}
+
+section#slideshow>div:nth-child(2) {
+	width: 900px;
+	height: 150px;
+}
+
+section#slideshow>div:nth-child(odd) {
+	height: 150px;
+	width: 45px;
+	text-align: center;
+	line-height: 150px;
+	font-size: 2.5em;
+	color: #808080;
+	cursor: pointer;
+}
+
+section#slideshow>div:nth-child(odd):hover {
+	color: #ffffff;
+	transition: all 1s linear;
+}
+
+/* Mise en forme du HEADER */
+#search input[name=q] {
+	background-image: url("../pics/loupe.png");
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+#entete {
+	height: 120px;
+}
+
+#entete>div {
+	float: left;
+	/* width: 25%; */
+}
+
+header#entete span#slogan{
+	font-size: 0.8em;
+}
+
+header#entete>div#logo {
+	width: 150px;
+	height: 90px;
+	margin: 15px;
+}
+
+header#entete>div#logo:hover {
+	transform: rotate(1turn);
+	transition: all 2s ease-in-out 0.5s;
+}
+
+#title {
+	width: 400px;
+	font-family: lesly;
+	font-size: 2em;
+	letter-spacing: 0.1em;
+	animation: macumba 2s infinite;
+}
+
+#search {
+	width: 300px;
+}
+
+#login {
+	width: 80px;
+	height: 80px;
+	margin: 20px 15px !important;
+}
+
+#entete>div:first-child>* {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+#entete>div:nth-child(2), #entete>div:nth-child(3) {
+	text-align: center;
+	line-height: 120px;
+}
+
+#entete>div:first-child, #entete>div:last-child {
+	margin: 20px 0px;
+}
+
+#entete>div img {
+	width: 80px;
+	height: 80px;
+}
+
+#slideshow {
+	clear: left;
+}
+
+/* Mise en forme de INDEX */
+.imgFond {
+	background-image: url("../pics/fond.jpg");
+	background-size: cover;
+}
+
+.mercredi {
+	background-image: url("../pics/fond3.jpg");
+	background-size: cover;
+}
+
+.vendredi {
+	background-image: url("../pics/fond5.jpg");
+	background-size: cover;
+}
+
+/* Adaptation RWD */
+#wrapper>*, #middle>* {
+	/*background-color: rgb(255,255,255);*/
+	background-color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (max-width:600px){
+	#wrapper>*, #middle>* {
+		background-color: rgba(0, 255, 0, 0.7);
+	}
+}
+@media screen and (max-width:320px){
+	#wrapper>*, #middle>* {
+		background-color: rgba(255, 0, 0, 0.7);
+	}
+}
+
+#wrapper {
+	width: 1000px;
+	margin: auto;
+}
+
+#entete, #slideshow, #menu, #contenu, #actus, #ppage {
+	margin: 5px;
+	border-radius: 20px;
+}
+
+#menu, #actus {
+	width: 190px;
+}
+
+#contenu {
+	width: 590px;
+}
+
+section {
+	background-color: #ffff00;
+}
+
+header {
+	background-color: red;
+}
+
+nav {
+	background-color: green;
+}
+
+aside {
+	background-color: blue;
+}
+
+footer {
+	background-color: purple;
+	clear: left;
+}
+
+.flottant {
+	float: left;
+}
+
+/* Menu  - Rollover */
+nav#menu ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+/*nav#menu ul li a {*/
+.bouton {
+	display: block;
+	background-color: #7d36c5;
+	color: #ffffff;
+	width: 80%;
+	text-align: center;
+	margin: 10px auto;
+	padding: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	border: solid #ffffff 3px;
+	transition: all 1s ease;
+}
+
+/*nav#menu ul li a:hover {*/
+.bouton:hover {
+	background-color: #ffffff;
+	color: #7d36c5;
+	border: solid #7d36c5 3px;
+}

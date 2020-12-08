@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>CDI Import/Export</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<h1>Nous rejoindre</h1>
+	<form method="get" action="php/exo_04.php" id="frmRecrut">
+		<label for="nom">Nom : </label> <input type="text" id="nom" name="nom"
+			placeholder="Saisir prénom puis nom de famille" required /><span
+			class="redstar">*</span> <br> <label>Sexe : </label> <input
+			type="radio" name="sexe" id="f" value="féminin" /> <span class="sprite f"></span>
+		<input type="radio" name="sexe" id="m" value="masculin" /> <span
+			class="sprite m"></span> <br> <label for="poste">Poste souhaité
+			: </label> <input type="text" id="poste" name="poste" required
+			list="choix_poste" /><span class="redstar">*</span>
+		<datalist id="choix_poste">
+			<option value="Commercial(e)">
+			<option value="Chef de produit">
+			<option value="Logisticien">
+			<option value="Comptable">
+			<option value="Manutentionnaire">
+		</datalist>
+		<br> <label>Type de contrat souhaité : </label> <input
+			type="checkbox" id="contrat1" name="contrat[]" value="CDD" /> <label
+			for="contrat1">CDD</label> <input type="checkbox" id="contrat2"
+			name="contrat[]" value="CDI" /> <label for="contrat2">CDI</label> <input
+			type="checkbox" id="contrat3" name="contrat[]" value="Stage" /> <label
+			for="contrat3">Stage</label> <input type="checkbox" id="contrat4"
+			name="contrat[]" value="CA" /> <label for="contrat4">CA</label> <input
+			type="checkbox" id="tous"> <label for="tous">Tous</label> <br>
+		<label for="salaire">Salaire souhaité : </label> <input type="range"
+			id="salaire" name="salaire" min="17" max="60" value="20" step="1" />
+		<output id="unite">K&euro;</output>
+		<br> <label for="lieu">Mobilité : </label> <select id="lieu"
+			name="lieu">
+			<optgroup label="Ile-de-France">
+				<option value="75">Paris</option>
+				<option value="78">Yvelines</option>
+				<option value="93">Seine-Saint-Denis</option>
+				<option value="92">Hauts-de-Seine</option>
+			</optgroup>
+			<optgroup label="Hauts-de-France">
+				<option value="59">Nord</option>
+				<option value="62">Pas-de-Calais</option>
+			</optgroup>
+		</select>
+		<figure>
+			<img alt="Carte de France" src="pics/france.svg" />
+			<figcaption>Choisir un département</figcaption>
+		</figure>
+		<label for="cv">Dépôt CV, LM : </label> <input type="file" id="cv"
+			name="cv" required multiple /> <span class="redstar">*</span> <br>
+		<input type="submit" id="envoi" /> <input type="reset" id="efface" />
+	</form>
+	<script src="js/recrut.js"></script>
+</body>
+</html>
